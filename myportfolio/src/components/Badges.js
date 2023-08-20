@@ -43,7 +43,7 @@ const Badges = () => {
           <div class="row justify-content-center ">
             <div class="col-lg-8 text-center">
               <div class="main_title">
-                <h3>My CP Milestones🏅</h3>
+                <h3>My CP Milestones<span class="badges">🏅</span></h3>
                 <p>
                 Conquering challenges, one milestone at a time. Journey through my competitive programming <br/>achievements and see how I code my way to success. 
                 </p>
