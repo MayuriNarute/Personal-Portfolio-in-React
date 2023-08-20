@@ -44,7 +44,7 @@ const About = () => {
               <h3>About me<span class="sparkles">✨</span></h3>
               </div>
             </div>
-            <div class="col-lg-6 text-center wow animate__animated animate__fadeInUp animate__delay-0s custom-fadeinup" style={{paddingTop:'80px'}}>
+            <div class="col-lg-6 text-center" style={{paddingTop:'80px',paddingBottom:'0px'}}>
             <div
                   class="feature_item justify-content-center " id="aboutimg" 
                   style={{ border: "2px solid #854fee", borderRadius: "50%"}}>
