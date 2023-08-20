@@ -76,7 +76,7 @@ const About = () => {
                   📌I'm open to part-time
                   internships & freelancing projects. So, let's join hands and build something extraordinary together!
                 </p>
-                <a class="primary_btn" style={{textDecoration:'none'}}  href="#">
+                <a class="primary_btn" style={{textDecoration:'none'}}  href="img/banner/Mayuri's resume.pdf" download>
                   <span>Download CV/Resume</span>
                 </a>
               </div>

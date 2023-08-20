@@ -34,7 +34,7 @@ const Home = () => {
                     <Link class="primary_btn" style={{textDecoration:'none'}} to="/contact">
                       <span>Hire Me</span>
                     </Link>
-                    <a class="primary_btn tr-bg" style={{textDecoration:'none'}}  href="#">
+                    <a class="primary_btn tr-bg" style={{textDecoration:'none'}}  href="img/banner/Mayuri's resume.pdf" download>
                       <span>Get Resume</span>
                     </a>
                     <br></br>
