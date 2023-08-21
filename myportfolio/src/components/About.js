@@ -50,8 +50,9 @@ const About = () => {
                   style={{ border: "2px solid #854fee", borderRadius: "50%"}}>
                   <img
                     class="photo"
-                    src="img/banner/Photo.png"
+                    src="img/banner/Photo-min.png"
                     alt="My Photo"
+                    srcSet=""
                   />
                 </div>
             </div>

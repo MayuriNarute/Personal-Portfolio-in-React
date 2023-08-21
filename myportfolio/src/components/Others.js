@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft,faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const images = [
-  'img/banner/gfgshirt.jpg',
-  'img/banner/gfg2.jpeg'
+  'img/banner/gfgshirt-min.jpg',
+  'img/banner/gfg2-min.jpeg'
 ];
 const images1 = [
-  'img/banner/hackathon.JPG',
-  'img/banner/hack_certificate.jpg'
+  'img/banner/hackathon-min.JPG',
+  'img/banner/hack_certificate-min.jpg'
 ];
 const Others = () => {
   useEffect(() => {

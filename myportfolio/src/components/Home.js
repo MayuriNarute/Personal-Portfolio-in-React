@@ -18,7 +18,7 @@ const Home = () => {
                   style={{ border: "2px solid #854fee", borderRadius: "50%",paddingBottom:'0px'}}>
                   <img
                     class="photo"
-                    src="img/banner/Photo.png"
+                    src="img/banner/Photo-min.png"
                     alt="My Photo"
                   />
                 </div>
