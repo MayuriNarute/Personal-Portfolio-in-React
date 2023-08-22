@@ -16,7 +16,7 @@ const images2 = [
 ];
 const Highlights = () => {
   useEffect(() => {
-    document.title = "Achievements | Mayuri Narute";
+    document.title = "Highlights | Mayuri Narute";
   }, []);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

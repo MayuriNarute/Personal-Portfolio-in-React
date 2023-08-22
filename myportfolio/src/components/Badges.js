@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-//codechef badges
 import { Icon } from "@iconify/react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Collapse } from "react-bootstrap";

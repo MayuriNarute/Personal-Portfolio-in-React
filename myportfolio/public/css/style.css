@@ -15,7 +15,11 @@ body {
   animation-duration: 2s !important;
 
 }
-
+.overs {
+  border: 2px solid #854fee;
+  border-radius: 20px;
+  padding: 6px;
+}
 /* Add basic styling */
 .animate-fadeinup {
   opacity: 0;
@@ -658,7 +662,7 @@ button:focus {
   .timeline-info {
     display: inline-block;
     vertical-align: top;
-    max-width: 320px;
+    max-width: 340px;
     margin-left: 6em;
   }
   .timeline-info small a {
@@ -729,6 +733,7 @@ button:focus {
   min-height: 485px; }
   @media (max-width: 1199px) {
     .banner_area {
+      padding-top: 90px;
       min-height: 350px; } }
   .banner_area .banner_inner {
     position: relative;

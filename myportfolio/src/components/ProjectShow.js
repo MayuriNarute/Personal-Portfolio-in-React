@@ -43,12 +43,13 @@ const ProjectShow = () => {
 
   return (
     <>       
+      <section class="banner_area">
 
-      <section class="portfolio_area justify-content-center" id="portfolio">
+      <section class="portfolio_area " id="portfolio">
       <section class="features_area section_gap">
       <div class="container">
 
-      <div class="row justify-content-center">
+      <div class="row ">
             <div class="col-lg-8 text-center">
               <div class="main_title">
                 <h3 class="text-center">Checkout my work!<span class="bulb">💡</span></h3>
@@ -70,7 +71,7 @@ const ProjectShow = () => {
               <li onClick={() => onlyReact("React")}>React JS</li>
             </ul>
           </div>
-          <div class="filters-content justify-content-center">
+          <div class="filters-content ">
             <div class="row portfolio-grid">
               {images.map((value) => {
                 return (
@@ -91,6 +92,7 @@ const ProjectShow = () => {
         </div>
         </div>
           </section>
+      </section>
       </section>
     </>
   );

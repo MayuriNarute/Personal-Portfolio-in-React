@@ -8,7 +8,7 @@ const Projects = ({ image, name, description,link,yt,git}) => {
   return (
     <>
       <div class="col-lg-4 col-md-6">
-        <div class="portfolio_box justify-content-center">
+        <div class="portfolio_box">
           <div class="single_portfolio">
             <img class="img-fluid w-80" src={image} alt="" />
             <div class="overlay"></div>

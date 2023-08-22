@@ -42,30 +42,7 @@ const Home = () => {
                     <br></br>
                     
                   </div>
-                  <footer class="footer_area" style={{background:'#fff'}}>
-
-                  <div class="footer_top" style={{background:'#fff'}}>
-                
-                  <div class="footer_social" style={{textAlign:'left',marginTop:'0px'}}>
-                  <a href="#" className="social-icon" style={{textAlign:'center'}}>
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="#" className="social-icon" style={{textAlign:'center'}}>
-                    <i class="fa fa-twitter"></i>
-                  </a>
                   
-                  <a href="#" className="social-icon" style={{textAlign:'center'}}>
-                    <i class="fa fa-youtube"></i>
-                  </a>
-                  <a href="#" className="social-icon" style={{textAlign:'center'}}>
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                  <a href="#" className="social-icon" style={{textAlign:'center'}}>
-                    <i class="fa fa-whatsapp"></i>
-                  </a>
-                </div>
-                </div>
-                </footer>
                 </div>
               </div>
               

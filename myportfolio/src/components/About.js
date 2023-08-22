@@ -77,7 +77,22 @@ const About = () => {
                   📌I'm open to part-time
                   internships & freelancing projects. So, let's join hands and build something extraordinary together!
                 </p>
-                <a class="primary_btn" style={{textDecoration:'none'}}  href="img/banner/Mayuri's resume.pdf" download>
+                <div>
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Age:
+                20</p>
+                </div>
+                <div>
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Place:
+                Pune, India</p></div>
+                <div>
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Contact: +91 7558232254</p>
+                </div>
+                <div>
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Email: mnarute28@gmail.com</p>
+                </div>
+
+
+                <br/><a class="primary_btn" style={{textDecoration:'none'}}  href="img/banner/Mayuri's resume.pdf" download>
                   <span>Download CV/Resume</span>
                 </a>
               </div>
