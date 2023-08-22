@@ -14,22 +14,22 @@ const Footer = () => {
                   <h4 style={{textTransform:'none'}}>Stay Connected!🌐</h4>
                 </div>
                 <div class="footer_social">
-                  <a href="#" className="social-icon">
+                  <a href="https://www.linkedin.com/in/mayuri-narute-556995216/" className="social-icon">
                     <i class="fa fa-linkedin"></i>
                   </a>
-                  <a href="#" className="social-icon">
+                  <a href="https://twitter.com/mayuri_n28" className="social-icon">
                     <i class="fa fa-twitter"></i>
                   </a>
-                  <a href="#" className="social-icon">
+                  <a href="https://github.com/MayuriNarute/" className="social-icon">
                     <i class="fa fa-github"></i>
                   </a>
-                  <a href="#" className="social-icon">
+                  <a href="https://www.youtube.com/@mayuricodehub/featured" className="social-icon">
                     <i class="fa fa-youtube"></i>
                   </a>
-                  <a href="#" className="social-icon">
+                  <a href="mailto:mnarute28@gmail.com" className="social-icon">
                     <i class="fa fa-envelope"></i>
                   </a>
-                  <a href="#" className="social-icon">
+                  <a href="https://wa.me/7558232254" className="social-icon">
                     <i class="fa fa-whatsapp"></i>
                   </a>
                 </div>

@@ -8,8 +8,8 @@ import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import ProjectShow from "./components/ProjectShow";
 import Badges from "./components/Badges";
-import Others from "./components/Others";
 import Certificates from "./components/Certificates";
+import Highlights from "./components/Highlights";
 function App() {
   return (
     <>
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/experience" element={<Experience />} />
           <Route exact path="/projects" element={<ProjectShow />} />
           <Route exact path="/CP_milestones" element={<Badges />} />
-          <Route exact path="/other_Achievements" element={<Others />} />
+          <Route exact path="/Highlights" element={<Highlights/>} />
           <Route exact path="/certificates" element={<Certificates/>}/>
           <Route exact path="/contact" element={<Contact />} />
         </Routes>

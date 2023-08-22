@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 const Experience = () => {

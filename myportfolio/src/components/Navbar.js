@@ -25,9 +25,9 @@ const Navbar=()=>{
 								<Link to="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Achievments</Link>
 								<ul class="dropdown-menu">
+									<li class="nav-item"><Link class="nav-link" to="/Highlights">Highlights</Link></li>
 									<li class="nav-item"><Link class="nav-link" to="/CP_milestones">CP Milestones</Link></li>
 									<li class="nav-item"><Link class="nav-link" to="/certificates">Certificates</Link></li>
-									<li class="nav-item"><Link class="nav-link" to="/other_Achievements">Highlights</Link></li>
 								</ul>
 							</li>
 							

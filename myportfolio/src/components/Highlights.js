@@ -10,14 +10,25 @@ const images1 = [
   'img/banner/hackathon-min.JPG',
   'img/banner/hack_certificate-min.jpg'
 ];
-const Others = () => {
+const images2 = [
+  'img/banner/gfgbackpack.jpeg',
+  'img/banner/gfgbackpack2.jpeg'
+];
+const Highlights = () => {
   useEffect(() => {
     document.title = "Achievements | Mayuri Narute";
   }, []);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentImageIndexs, setCurrentImageIndexs] = useState(0);
+  const [currentImageIndexd, setCurrentImageIndexd] = useState(0);
+  const goToPrevImage2 = () => {
+    setCurrentImageIndexd((prevIndex) => (prevIndex === 0 ? images2.length - 1 : prevIndex - 1));
+  };
 
+  const goToNextImage2 = () => {
+    setCurrentImageIndexd((prevIndex) => (prevIndex === images2.length - 1 ? 0 : prevIndex + 1));
+  };
   const goToPrevImage1 = () => {
     setCurrentImageIndexs((prevIndex) => (prevIndex === 0 ? images1.length - 1 : prevIndex - 1));
   };
@@ -49,8 +60,8 @@ const Others = () => {
               </div>
             </div>
           </div>
-          <div class="row feature_inner justify-content-center">
-            <div class="col-lg-5 col-md-6">
+          <div class="row feature_inner">
+            <div class="col-lg-4 col-md-6">
               <div class="feature_item" style={{ textAlign: "center",border:'2px solid #854fee',borderRadius:'20px'}}>
 
                <FontAwesomeIcon icon={faAngleLeft}size="lg" onClick={goToPrevImage1}/>&nbsp;&nbsp;
@@ -68,7 +79,7 @@ const Others = () => {
                 </p>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-4 col-md-6">
               <div class="feature_item" style={{ textAlign: "center",border:'2px solid #854fee',borderRadius:'20px'}}>
               <FontAwesomeIcon icon={faAngleLeft} size="lg" onClick={goToPrevImage}/>&nbsp;&nbsp;
               <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} style={{ width: "250px", height: "250px" }}/>
@@ -86,10 +97,27 @@ const Others = () => {
                 </p>
               </div>
             </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="feature_item" style={{ textAlign: "center",border:'2px solid #854fee',borderRadius:'20px'}}>
+              <FontAwesomeIcon icon={faAngleLeft} size="lg" onClick={goToPrevImage2}/>&nbsp;&nbsp;
+              <img src={images2[currentImageIndexd]} alt={`Image ${currentImageIndexd + 1}`} style={{ width: "240px", height: "280px" }}/>
+              &nbsp;&nbsp;<FontAwesomeIcon icon={faAngleRight} size="lg" onClick={goToNextImage2}/>
+
+                <br />
+                <p>
+                  <b style={{ color: "black", fontSize: "17px" }}>
+                    🎁GFG BackPack -{" "}
+                  </b>
+                  Received this incredible reward from GeeksforGeeks upon
+                  earning 200 geekbits by solving POTD challenges on their
+                  platform.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </>
   );
 };
-export default Others;
+export default Highlights;
