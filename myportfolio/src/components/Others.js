@@ -53,9 +53,9 @@ const Others = () => {
             <div class="col-lg-5 col-md-6">
               <div class="feature_item" style={{ textAlign: "center",border:'2px solid #854fee',borderRadius:'20px'}}>
 
-               <FontAwesomeIcon icon={faAngleLeft} onClick={goToPrevImage1}/>&nbsp;&nbsp;
+               <FontAwesomeIcon icon={faAngleLeft}size="lg" onClick={goToPrevImage1}/>&nbsp;&nbsp;
               <img src={images1[currentImageIndexs]} alt={`Image ${currentImageIndexs + 1}`} style={{ width: "280px", height: "280px" }}/>
-              &nbsp;&nbsp;<FontAwesomeIcon icon={faAngleRight} onClick={goToNextImage1}/>
+              &nbsp;&nbsp;<FontAwesomeIcon icon={faAngleRight} size="lg" onClick={goToNextImage1}/>
 
 
                 <br />
@@ -70,9 +70,9 @@ const Others = () => {
             </div>
             <div class="col-lg-5 col-md-6">
               <div class="feature_item" style={{ textAlign: "center",border:'2px solid #854fee',borderRadius:'20px'}}>
-              <FontAwesomeIcon icon={faAngleLeft} onClick={goToPrevImage}/>&nbsp;&nbsp;
+              <FontAwesomeIcon icon={faAngleLeft} size="lg" onClick={goToPrevImage}/>&nbsp;&nbsp;
               <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} style={{ width: "250px", height: "250px" }}/>
-              &nbsp;&nbsp;<FontAwesomeIcon icon={faAngleRight} onClick={goToNextImage}/>
+              &nbsp;&nbsp;<FontAwesomeIcon icon={faAngleRight} size="lg" onClick={goToNextImage}/>
 
                 <br />
                 <br />

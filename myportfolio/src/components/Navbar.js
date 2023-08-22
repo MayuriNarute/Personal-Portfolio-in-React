@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 const Navbar=()=>{
-    return(
+	 
+	return(
             <header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
-					<Link class="navbar-brand logo_h" to="/home"><span style={{color:'#854fee',fontFamily:'cursive'}}><h1>Mayuri/></h1></span></Link>
+					<Link class="navbar-brand logo_h" to="/home"><span style={{color:'#854fee',fontFamily:'cursive'}}><h1>Mayuri/</h1></span></Link>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -25,8 +26,8 @@ const Navbar=()=>{
 								aria-expanded="false">Achievments</Link>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><Link class="nav-link" to="/CP_milestones">CP Milestones</Link></li>
-									<li class="nav-item"><Link class="nav-link" to="/certificates">Course Certificates</Link></li>
-									<li class="nav-item"><Link class="nav-link" to="/other_Achievements">Competitions</Link></li>
+									<li class="nav-item"><Link class="nav-link" to="/certificates">Certificates</Link></li>
+									<li class="nav-item"><Link class="nav-link" to="/other_Achievements">Highlights</Link></li>
 								</ul>
 							</li>
 							
@@ -35,6 +36,7 @@ const Navbar=()=>{
 					</div>
 				</div>
 			</nav>
+
 		</div>
 	</header>
     )

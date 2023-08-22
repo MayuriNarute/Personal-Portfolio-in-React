@@ -1,97 +1,227 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft,faAngleRight } from "@fortawesome/free-solid-svg-icons";
-//import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Icon } from "@iconify/react";
 
+import { faAngleLeft, faAngleRight,faRibbon,faAngleDown,faAngleUp} from "@fortawesome/free-solid-svg-icons";
+//import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Collapse } from "react-bootstrap";
 const courses = [
-  'img/portfolio/html1.png',
-  'img/portfolio/p2.jpg'
+  "img/portfolio/html1.png",
+  "img/portfolio/aws1.png",
+  "img/portfolio/jsp1.png",
+  "img/portfolio/accenture1.png",
+  "img/portfolio/SQL_certificate.jpg",
+  "img/portfolio/C++_certificate.jpg",
+  "img/portfolio/Web-Design_certificate.jpg",
+  "img/portfolio/tcs.png",
+
+];
+const Internships = [
+  "img/portfolio/linkcode1.png",
+  "img/portfolio/letsgrowmore.png",
+  "img/portfolio/completion.png",
+  "img/portfolio/oasis.png",
+  "img/portfolio/twowaits.png",
+];
+const Participation = [
+  "img/portfolio/gpp.png",
+  "img/portfolio/bluebit.png",
+  "img/portfolio/spoken.png",
+  "img/portfolio/fraz.png",
 ];
 const Certificates = () => {
+  const [isCourseVisible, setIsCourseVisible] = useState(false);
+  const [isInternVisible, setIsInternVisible] = useState(false);
+  const [isPartVisible, setIsPartVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentImageIndexs, setCurrentImageIndexs] = useState(0);
+  const [currentImageIndexp, setCurrentImageIndexp] = useState(0);
 
-  // const goToPrevImage1 = () => {
-  //   setCurrentImageIndexs((prevIndex) => (prevIndex === 0 ? images1.length - 1 : prevIndex - 1));
-  // };
+ const toggleCourses=()=>{
+  setIsCourseVisible(!isCourseVisible);
 
-  // const goToNextImage1 = () => {
-  //   setCurrentImageIndexs((prevIndex) => (prevIndex === images1.length - 1 ? 0 : prevIndex + 1));
-  // };
-  const goToPrevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? courses.length - 1 : prevIndex - 1));
-  };
-
+ }
+ const toggleInternships=()=>{
+  setIsInternVisible(!isInternVisible);
+ }
+ const toggleParticipation=()=>{
+  setIsPartVisible(!isPartVisible);
+ }
+ const goToPrevImage = () => {
+  setCurrentImageIndex((prevIndex) =>
+    prevIndex === 0 ? courses.length - 1 : prevIndex - 1
+  );
+};
   const goToNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === courses.length - 1 ? 0 : prevIndex + 1));
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === courses.length - 1 ? 0 : prevIndex + 1
+    );
   };
-   let result2;
-   const [numPages, setNumPages] = useState(null);
-   //const [pageNumber, setPageNumber] = useState(1);
-   const [pageNumber, setPageNumber] = useState(1);
+  const goToPrevImage1 = () => {
+    setCurrentImageIndexs((prevIndex) =>
+      prevIndex === 0 ? Internships.length - 1 : prevIndex - 1
+    );
+  };
 
-   const goToPrevPage = () =>
-       setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
+  const goToNextImage1 = () => {
+    setCurrentImageIndexs((prevIndex) =>
+      prevIndex === Internships.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-   const goToNextPage = () =>
-       setPageNumber(
-           pageNumber + 1 >= numPages ? numPages : pageNumber + 1,
-       );
-   const onDocumentLoadSuccess = ({ numPages }) => {
-       setNumPages(numPages);
-   };
-    useEffect(()=> {
-		document.title = 'Certificates | Mayuri Narute';
-	  },[]);
-      return(
-        <>
-        <section class="features_area section_gap">
+  const goToPrevImage2 = () => {
+    setCurrentImageIndexp((prevIndex) =>
+      prevIndex === 0 ? Participation.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNextImage2 = () => {
+    setCurrentImageIndexp((prevIndex) =>
+      prevIndex === Participation.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  useEffect(() => {
+    document.title = "Certificates | Mayuri Narute";
+  }, []);
+  return (
+    <>
+      <section class="features_area section_gap">
         <div class="container">
           <div class="row justify-content-center ">
             <div class="col-lg-8 text-center">
               <div class="main_title">
-                <h3>My Certificates<span className="ribbon">🎗️</span></h3>
+                <h3>
+                  My Certificates<span className="ribbon">🎗️</span>
+                </h3>
                 <p>
-                Conquering challenges, one milestone at a time. Journey through my competitive programming <br/>achievements and see how I code my way to success. 
+                Explore my certifications and qualifications, showcasing my commitment to <br/>continuous
+                 learning and expertise in various domains.
                 </p>
               </div>
             </div>
-            </div>
-        <h4 class="mb-4 justify-content-left">
+          </div>
+          <h4 class="mb-4 justify-content-left">
             <li className="list-item">
               <span>
-                {/* <Icon icon="fa-brands:hackerrank" width="30" /> */}
+              <FontAwesomeIcon icon={faRibbon} size="lg"></FontAwesomeIcon>
                 &nbsp;Course Certificates
               </span>
-              {/* <span class="span2" onClick={toggleHackerrankB}>
-                View
-                <FontAwesomeIcon
-                  onClick={toggleHackerrankB}
-                  icon={faAngleDown}
-                />
-              </span> */}
+              <span class="span2" onClick={toggleCourses}>
+                View &nbsp;
+                {isCourseVisible ? <FontAwesomeIcon icon={faAngleUp} /> : <FontAwesomeIcon icon={faAngleDown} />}
+              </span>
             </li>
           </h4>
-        <section class="features_area">
+          <Collapse in={isCourseVisible} className="drop">
 
-<div class="row feature_inner justify-content-center">
-<div class="col-lg-6 col-md-6">
+          <section class="features_area" style={{paddingBottom:'5px'}}>
+            <div class="row feature_inner justify-content-center">
+              <div class="col-lg-4 col-mb-2">
+                <div
+                  class="feature_item courseimg"
+                  style={{ textAlign:'center',border: "2px solid #854fee", borderRadius: "20px" }}>
+                  
+                  <img
+                    src={courses[currentImageIndex]}
+                    alt={`Image ${currentImageIndex + 1}`}
+                    style={{ width: "320px", height: "290px" }}
+                  />
+                  <br/>
+                  <FontAwesomeIcon icon={faAngleLeft} size="lg" onClick={goToPrevImage} />
+                  &nbsp;&nbsp;                  &nbsp;&nbsp;
+                  <FontAwesomeIcon
+                    icon={faAngleRight} size="lg"
+                    onClick={goToNextImage}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          </Collapse>
+          <h4 class="mb-4 justify-content-center">
+            <li className="list-item">
+              <span>
+              <FontAwesomeIcon icon={faRibbon} size="lg"></FontAwesomeIcon>
+                &nbsp;Internship Certificates
+              </span>
+              <span class="span3" onClick={toggleInternships}>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View &nbsp;
+                {isInternVisible ? <FontAwesomeIcon icon={faAngleUp} /> : <FontAwesomeIcon icon={faAngleDown} />}
+              </span>
+            </li>
+          </h4>
+          <Collapse in={isInternVisible} className="drop">
 
+          <section class="features_area">
+            <div class="row feature_inner justify-content-center">
+              <div class="col-lg-6 col-mb-2">
                 <div
                   class="feature_item text-center"
-                  style={{ border: "2px solid #854fee", borderRadius: "20px" }}>
-                  <FontAwesomeIcon icon={faAngleLeft} onClick={goToPrevImage}/>&nbsp;&nbsp;
-              <img src={courses[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} style={{ width: "500px", height: "400px" }}/>
-              &nbsp;&nbsp;<FontAwesomeIcon icon={faAngleRight} onClick={goToNextImage}/>
+                  style={{ textAlign:'center', border: "2px solid #854fee", borderRadius: "20px" ,height:'580px' }}>
+                 
+                  <img
+                    src={Internships[currentImageIndexs]}
+                    alt={`Image ${currentImageIndexs + 1}`}
+                    style={{ width: "320px" }}
+                  />
+                  <br/>
+                  <FontAwesomeIcon icon={faAngleLeft} size="lg" onClick={goToPrevImage1} />
+                  &nbsp;&nbsp;                  &nbsp;&nbsp;
 
+                  <FontAwesomeIcon
+                    icon={faAngleRight} size="lg"
+                    onClick={goToNextImage1}
+                  />
                 </div>
-</div>
-</div>
-</section>
-</div></section>
-        </>
-    
-      )}
-    
-export default Certificates
+              </div>
+            </div>
+          </section>
+          </Collapse>
+          <h4 class="mb-4 justify-content-center">
+            <li className="list-item">
+              <span>
+              <FontAwesomeIcon icon={faRibbon} size="lg"></FontAwesomeIcon>
+                &nbsp;Participation Certificates
+              </span>
+              <span class="span3" onClick={toggleParticipation}>
+              View &nbsp;
+                {isPartVisible ? <FontAwesomeIcon icon={faAngleUp} /> : <FontAwesomeIcon icon={faAngleDown} />}
+              </span>
+            </li>
+          </h4>
+          <Collapse in={isPartVisible} className="drop">
+
+          <section class="features_area">
+            <div class="row feature_inner justify-content-center">
+              <div class="col-lg-4 col-mb-2">
+                <div
+                  class="feature_item text-center"
+                  style={{ textAlign:'center', border: "2px solid #854fee", borderRadius: "20px"}}>
+                 
+                  <img
+                    src={Participation[currentImageIndexp]}
+                    alt={`Image ${currentImageIndexp + 1}`}
+                    style={{ width: "320px",height:'260px' }}
+                  />
+                  <br/>
+                  <FontAwesomeIcon icon={faAngleLeft} size="lg" onClick={goToPrevImage2} />
+                  &nbsp;&nbsp;                  &nbsp;&nbsp;
+
+                  <FontAwesomeIcon
+                    icon={faAngleRight} size="lg"
+                    onClick={goToNextImage2}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          </Collapse>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Certificates;

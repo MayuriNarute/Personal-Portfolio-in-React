@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown,
   faAngleUp,
-  faAward,
 } from "@fortawesome/free-solid-svg-icons";
 const Badges = () => {
   useEffect(() => {
@@ -39,9 +38,9 @@ const Badges = () => {
   return (
     <>
       <section class="features_area section_gap">
-        <div class="container">
-          <div class="row justify-content-center ">
-            <div class="col-lg-8 text-center">
+        <div class="container justify-content-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
               <div class="main_title">
                 <h3>My CP Milestones<span class="badges">🏅</span></h3>
                 <p>
@@ -49,6 +48,7 @@ const Badges = () => {
                 </p>
               </div>
             </div>
+            <div className="justify-content-center">
           <h4 class="mb-4">
             <li className="list-item">
               <span>
@@ -56,8 +56,7 @@ const Badges = () => {
                 &nbsp;HackerRank Badges
               </span>
               <span class="span2" onClick={toggleHackerrankB}>
-                View {isSkillsVisible ? <FontAwesomeIcon icon={faAngleUp} /> : <FontAwesomeIcon icon={faAngleDown} />}
-              
+                View {isSkillsVisible ? <FontAwesomeIcon icon={faAngleUp} /> : <FontAwesomeIcon icon={faAngleDown} />}              
               </span>
             </li>
           </h4>
@@ -291,6 +290,7 @@ const Badges = () => {
             </div>
             </section>
             </Collapse>
+            </div>
         </div>
         
         </div>

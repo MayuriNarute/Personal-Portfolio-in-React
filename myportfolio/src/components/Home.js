@@ -6,8 +6,10 @@ const Home = () => {
   useEffect(()=> {
 		document.title = 'Home | Mayuri Narute';
 	  },[]);
+
   return (
     <>
+
       <section class="home_banner_area">
         <div class="banner_inner">
           <div class="container">
