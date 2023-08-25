@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 const Experience = () => {
+  //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  // const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   useEffect(() => {
     document.title = "Experience | Mayuri Narute";
   }, []);
@@ -54,12 +57,12 @@ const Experience = () => {
   return (
     <>
       <section class="banner_area">
-        <section class="features_area section_gap">
+        <section class="features_area section_gap_top">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <div class="main_title">
                 <h3>
-                  My Expedition<span class="book">📚</span>{" "}
+                  My Expedition<span class="book">📚</span>
                 </h3>
                 <p>
                   Charting my journey through learning and growth, one
@@ -70,7 +73,7 @@ const Experience = () => {
           </div>
           <div class="container" style={{ paddingTop: 0, marginTop: 0 }}>
             <div class="row feature_inner justify-content-center ">
-              <div class="col-lg-6 col-md-6 ">
+              <div class="col-lg-5 col-md-6 ">
                 <div class="feature_item text-center">
                   <a class="primary_btn " href="#">
                     <span>
@@ -90,22 +93,20 @@ const Experience = () => {
                         </div>
                         <div
                           class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "20px" }}>
+                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
                           <h5>
                             <span>Web Developer Intern</span>
                             <small
                               style={{
                                 fontSize: 12,
                                 fontWeight: "bold",
+                                marginLeft: "20px",
                               }}>
                               <br />
-                              <a href="#">@Oasis Infobyte</a>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltipp}>
-                                <a href="#" class="overs">
-                                  View Details
-                                </a>
+                                <a href="#">@Oasis Infobyte</a>
                               </OverlayTrigger>
                             </small>
                           </h5>
@@ -121,7 +122,7 @@ const Experience = () => {
                         </div>
                         <div
                           class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "20px" }}>
+                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
                           <h5>
                             <span>Web Developer Intern</span>
                             <small
@@ -129,13 +130,10 @@ const Experience = () => {
                                 fontSize: 12,
                                 fontWeight: "bold",
                               }}>
-                              <a href="#">@The Sparks Foundation</a>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltip1}>
-                                <a href="#" class="overs">
-                                  View Details
-                                </a>
+                                <a href="#">@The Sparks Foundation</a>
                               </OverlayTrigger>
                             </small>
                           </h5>
@@ -151,23 +149,20 @@ const Experience = () => {
                         </div>
                         <div
                           class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "20px" }}>
+                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
                           <h5>
                             <span> Web Developer Intern</span>
                             <small
                               style={{
                                 fontSize: 12,
                                 fontWeight: "bold",
-                              }}>
-                              <br />
-                              <a href="#">&nbsp;@LetsGrowMore</a>
 
+                                marginLeft: "25px",
+                              }}>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltip2}>
-                                <a href="#" class="overs">
-                                  View Details
-                                </a>
+                                <a href="#">&nbsp;@LetsGrowMore</a>
                               </OverlayTrigger>
                             </small>
                           </h5>
@@ -183,17 +178,14 @@ const Experience = () => {
                         </div>
                         <div
                           class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "20px" }}>
+                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
                           <h5>
                             <span>Java Full Stack Intern</span>
                             <small>
-                              <a href="#">@Linkcode Technologies, Pune</a>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltip3}>
-                                <a href="#" class="overs">
-                                  View Details
-                                </a>
+                                <a href="#">@Linkcode Technologies, Pune</a>
                               </OverlayTrigger>
                             </small>
                           </h5>
@@ -209,22 +201,22 @@ const Experience = () => {
                         </div>
                         <div
                           class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "20px" }}>
+                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
                           <h5>
                             <span>DSA Scholar Intern</span>
                             <small
                               style={{
                                 fontSize: 12,
                                 fontWeight: "bold",
+                                content: "",
+                                display: "block",
+                                marginLeft: "35px",
+                                marginTop: "0.5rem",
                               }}>
-                              <br />
-                              <a href="#">@TwoWaits</a>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltip4}>
-                                <a href="#" class="overs">
-                                  View Details
-                                </a>
+                                <a href="#">@TwoWaits</a>
                               </OverlayTrigger>
                             </small>
                           </h5>
@@ -238,7 +230,7 @@ const Experience = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 text-center">
+              <div class="col-lg-6 col-md-6">
                 <div class="feature_item text-center">
                   <a class="primary_btn" href="#">
                     <span>
@@ -258,22 +250,22 @@ const Experience = () => {
                         </div>
                         <div
                           class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "20px" }}>
+                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
                           <h5>
                             <span>B.Tech (Information Technology)</span>
                             <small
                               style={{
                                 fontSize: 12,
                                 fontWeight: "bold",
+                                content: "",
+                                display: "block",
+                                marginLeft: "40px",
+                                marginTop: "0.5rem",
                               }}>
-                              <br />
-                              <a href="#">@PCCOE, Pune</a>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltips}>
-                                <a href="#" class="overs">
-                                  View More
-                                </a>
+                                <a href="#">@PCCOE, Pune</a>
                               </OverlayTrigger>
                             </small>
                           </h5>
@@ -290,21 +282,22 @@ const Experience = () => {
                         </div>
                         <div
                           class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "20px" }}>
+                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
                           <h5>
                             <span>Diploma (Information Technology)</span>
                             <small
                               style={{
                                 fontSize: 12,
                                 fontWeight: "bold",
+                                content: "",
+                                display: "block",
+                                marginLeft: "0px",
+                                marginTop: "0.5rem",
                               }}>
-                              <a href="#">@Government Polytechnic, Pune</a>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltip}>
-                                <a href="#" class="overs">
-                                  View More
-                                </a>
+                                <a href="#">@Government Polytechnic, Pune</a>
                               </OverlayTrigger>
                             </small>
                           </h5>
@@ -335,13 +328,10 @@ const Experience = () => {
                                 marginLeft: "20px",
                                 marginTop: "0.5rem",
                               }}>
-                              <a href="#">@Tukdoji Vidyalaya, Daund</a>
                               <OverlayTrigger
                                 placement="bottom"
                                 overlay={tooltip5}>
-                                <a href="#" class="overs">
-                                  View More
-                                </a>
+                                <a href="#">@Tukdoji Vidyalaya, Daund</a>
                               </OverlayTrigger>
                             </small>
                           </h5>

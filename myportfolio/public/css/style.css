@@ -16,9 +16,13 @@ body {
 
 }
 .overs {
-  border: 2px solid #854fee;
-  border-radius: 20px;
+  
   padding: 6px;
+  font-size: 12px;
+  margin-left: 850px;
+  text-decoration: none;
+  color: #854fee;
+  font-weight: 700;
 }
 /* Add basic styling */
 .animate-fadeinup {
@@ -227,7 +231,6 @@ body {
   border: 1px solid #fff;
   border-radius: 50%;
   background: transparent;
-  padding: 0px;
 
 }
 #profile{
@@ -244,8 +247,8 @@ body {
 }
 @media (max-width: 991px) {
   #profile{
-    padding-top: 8px;
-    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 3px;
 
   }
   .photo{
@@ -498,6 +501,31 @@ button:focus {
   height: 100%;
   width: 100%; }
 
+  .gradient-bg, .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link, .blog_right_sidebar .widget_title, .blog_right_sidebar .newsletter_widget .bbtns, .blog_right_sidebar .tag_cloud_widget ul li a:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .comments-area .btn-reply:hover {
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: -moz-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: -o-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%); }
+  
+  .border-gradient {
+    border-image: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    border-image: -moz-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    border-image: -o-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    border-image: linear-gradient(90deg, #4458dc 0%, #854fee 100%); }
+  
+  .gradient-bg2 {
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: -moz-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: -o-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%); }
+  
+  .gradient-color, .contact_info .info_item i {
+    background: -webkit-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: -moz-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: -o-linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .header_area {
@@ -671,8 +699,8 @@ button:focus {
     font-size: 12px;
     font-weight: bold;
     display: inline-block;
-    vertical-align: middle;
     margin-left: 15px;
+   
   }
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -2942,7 +2970,7 @@ h6 {
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
-  width: 90%;
+  width: 100%;
   justify-content: center;
   padding-bottom: 120px; }
   @media (max-width: 991px) {

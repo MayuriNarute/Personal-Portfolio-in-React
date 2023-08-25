@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Quote from "./Quote";
 
 const Home = () => {
   
@@ -9,10 +10,11 @@ const Home = () => {
 
   return (
     <>
-
       <section class="home_banner_area">
+     <br/>
         <div class="banner_inner">
           <div class="container">
+
             <div class="row">
             <div class="col-lg-5" id="profile">
               <div
@@ -31,7 +33,7 @@ const Home = () => {
                   <br />
                   <h3>Hello<span className="wave-emoji">👋</span>, I am</h3>
                   <h1>Mayuri Narute</h1>
-                  <h5>Full Stack Java Developer | Exploring MERN Stack</h5>
+                  <h5>Full Stack Java Developer | Learning React | Competitive Programming | PCCOE'25 | GPP'22</h5>
                   <div class="d-flex align-items-center">
                     <Link class="primary_btn" style={{textDecoration:'none'}} to="/contact">
                       <span>Hire Me</span>

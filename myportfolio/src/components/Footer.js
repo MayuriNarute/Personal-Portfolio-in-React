@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <br />
       <br />
-      <footer class="footer_area">
+      <footer class="footer_area" style={{display:'flexbox'}}>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-12">

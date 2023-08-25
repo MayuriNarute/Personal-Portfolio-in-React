@@ -1,12 +1,17 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Quote from './Quote';
 
 const Navbar=()=>{
-	 
+	const maxLength = 30;
 	return(
-            <header class="header_area">
+    	<header class="header_area">
+			
 		<div class="main_menu">
+		<Quote maxLength={maxLength}/>
+
 			<nav class="navbar navbar-expand-lg navbar-light">
+
 				<div class="container">
 					<Link class="navbar-brand logo_h" to="/home"><span style={{color:'#854fee',fontFamily:'cursive'}}><h1>Mayuri/</h1></span></Link>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
