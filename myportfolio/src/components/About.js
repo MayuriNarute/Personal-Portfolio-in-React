@@ -35,7 +35,6 @@ const About = () => {
     <>
       <section class="about_area ">
 
-        <section class="features_area">
         <div class="container">
 
       <div class="row justify-content-center">
@@ -77,19 +76,22 @@ const About = () => {
                   📌I'm open to part-time
                   internships & freelancing projects. So, let's join hands and build something extraordinary together!
                 </p>
-                <div>
-                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Age:
-                20</p>
+                  <div className="row">
+                    <div class="col lg-4">
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup"><span style={{color:'#854fee',fontWeight:'700'}}>Age:</span>
+                <br/>20</p></div>
+                <div class="col lg-4">
+
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup"><span style={{color:'#854fee',fontWeight:'700'}}>Place:</span><br/>
+                Pune, India</p></div></div>
+                <div className="row">
+                    <div class="col lg-4">
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup"><span style={{color:'#854fee',fontWeight:'700'}}>Contact:
+                </span><br/> +91 7558232254</p>
                 </div>
-                <div>
-                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Place:
-                Pune, India</p></div>
-                <div>
-                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Contact: +91 7558232254</p>
-                </div>
-                <div>
-                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">Email: mnarute28@gmail.com</p>
-                </div>
+                <div class="col lg-4">
+                <p className="about wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup"><span style={{color:'#854fee',fontWeight:'700'}}>Email: </span><br/>mnarute28@gmail.com</p>
+                </div></div>
 
 
                 <br/><a class="primary_btn" style={{textDecoration:'none'}}  href="img/banner/Mayuri's resume.pdf" download>
@@ -99,8 +101,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section class="features_area section_gap_bottom" style={{paddingTop:'0px'}}>
+      <section class="features_area" style={{paddingTop:'60px'}}>
         <div class="container">
           <div class="row justify-content-center ">
             <div class="col-lg-8 text-center wow animate__animated animate__fadeInUp animate__delay-0s custom2">

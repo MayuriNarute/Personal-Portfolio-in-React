@@ -19,7 +19,7 @@ const Home = () => {
             <div class="col-lg-5" id="profile">
               <div
                   class="feature_item text-center"
-                  style={{ border: "2px solid #854fee", borderRadius: "50%",paddingBottom:'0px'}}>
+                  style={{ border: "2px solid #854fee", borderRadius: "50%"}}>
                   <img
                     class="photo"
                     src="img/banner/Photo-min.png"

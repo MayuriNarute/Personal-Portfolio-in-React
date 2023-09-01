@@ -248,11 +248,11 @@ body {
 @media (max-width: 991px) {
   #profile{
     padding-top: 0px;
-    padding-bottom: 3px;
+    padding-bottom: 0px;
 
   }
   .photo{
-    padding: 0px;
+    padding-top: 0px;
   }
   #hometext{
     padding-left: 2px;
@@ -749,8 +749,11 @@ button:focus {
         font-size: 24px;
         margin-bottom: 35px; }
       .home_banner_area .banner_inner .banner_content .primary_btn {
-        font-size: 14px;
-        margin-right: 20px;
+        display: block;
+        font-size: 15px;
+        line-height: 50px;
+        margin-right: 2px;
+        margin-left: 2px;
       }
       
 
@@ -3344,9 +3347,14 @@ h6 {
   .home_banner_area .dontation_item {
     max-width: 350px;
     margin: auto; }
-    .home_banner_area .banner_inner .home_right_img img {
-      width:50%;
-     }
+  .home_banner_area .dontation_item {
+      max-width: 350px;
+      margin: auto; }
+    .home_banner_area .banner_inner .banner_content .primary_btn {
+      display: inline-block;
+      font-size: 15px;
+      padding: 0;
+    }
   /* Footer Area css
   ============================================================================================ */
   .footer_area .col-sm-6 {
