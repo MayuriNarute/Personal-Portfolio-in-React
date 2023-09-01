@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Icon } from "@iconify/react";
 
-const Projects = ({ image, name, description,link,yt,git}) => {
+const Projects = ({ image, name, description,link,yt,git,techstack,techstack2,techstack3,techstack4}) => {
 	 useEffect(()=> {
 		document.title = 'Projects | Mayuri Narute';
 	  },[]);
@@ -20,11 +20,17 @@ const Projects = ({ image, name, description,link,yt,git}) => {
 
               </div>
           </div>
-          <div class="short_info">
+          <div class="short_info" >
             <h5 style={{color:'#854fee'}}>
-              <a href="#">{name}</a>
+              <a style={{textDecoration:'none'}}>{name}</a>
             </h5>
+            <span style={{backgroundColor:'#854fee'}} class="badge badge-primary">{techstack}</span>&nbsp;
+            <span style={{backgroundColor:'#854fee'}} class="badge badge-primary">{techstack2}</span>&nbsp;
+            <span style={{backgroundColor:'#854fee'}} class="badge badge-primary">{techstack3}</span>&nbsp;
+            <span style={{backgroundColor:'#854fee'}} class="badge badge-primary">{techstack4}</span>
+
             <p>{description}</p>
+
           </div>
         </div>
       </div>

@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 const Experience = () => {
-  //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  // const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   useEffect(() => {
     document.title = "Experience | Mayuri Narute";
   }, []);

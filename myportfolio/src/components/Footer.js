@@ -1,8 +1,11 @@
 import React from "react";
+import Quote from "./Quote";
 
 const Footer = () => {
   return (
     <>
+    		<Quote/>
+
       <br />
       <br />
       <footer class="footer_area" style={{display:'flexbox'}}>
@@ -38,7 +41,7 @@ const Footer = () => {
           </div>
           <div class="row footer_bottom justify-content-center">
             <p class="col-lg-8 col-sm-12 footer-text">
-              This portfolio is made with ❤️ by Mayuri Narute
+             Made with ❤️ by Mayuri Narute
             </p>
           </div>
         </div>

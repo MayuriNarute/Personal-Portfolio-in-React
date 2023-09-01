@@ -34,7 +34,7 @@ const Badges = () => {
   return (
     <>
       <section class="features_area section_gap_top">
-        <div class="container justify-content-center">
+        <div class="container ">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="main_title ">
@@ -47,7 +47,7 @@ const Badges = () => {
                   achievements and see how I code my way to success.
                   <br />
                   Find my Coding Profiles here:
-                </p>
+                </p><br/>
                 <div class="footer_logo">
                   <div class="footer_social text-center">
                     <a
@@ -103,7 +103,7 @@ const Badges = () => {
                 </li>
               </h4>
 
-              <Collapse in={isSkillsVisible} className="drop">
+              <Collapse in={isSkillsVisible} className="drop justify-content-center">
                 <section class="features_area">
                   <div
                     class="row feature_inner"
@@ -117,7 +117,7 @@ const Badges = () => {
                         }}>
                         <img
                           src="img/badges/sql.jpg"
-                          style={{ width: "250px", height: "100px" }}
+                          style={{ width: "250px", height: "140px" }}
                           alt=""
                         />
                       </div>
@@ -130,8 +130,8 @@ const Badges = () => {
                           borderRadius: "25px",
                         }}>
                         <img
-                          src="img/badges/25daysofCode.jpg"
-                          style={{ width: "250px", height: "100px" }}
+                          src="img/badges/30daysofCode.jpg"
+                          style={{ width: "250px", height: "140px" }}
                           alt=""
                         />
                       </div>
@@ -145,7 +145,7 @@ const Badges = () => {
                         }}>
                         <img
                           src="img/badges/problem solving.jpg"
-                          style={{ width: "250px", height: "100px" }}
+                          style={{ width: "250px", height: "140px" }}
                           alt=""
                         />
                       </div>
@@ -159,7 +159,7 @@ const Badges = () => {
                         }}>
                         <img
                           src="img/badges/java hackerrank badge.jpg"
-                          style={{ width: "250px", height: "100px" }}
+                          style={{ width: "250px", height: "140px" }}
                           alt=""
                         />
                       </div>
@@ -175,7 +175,7 @@ const Badges = () => {
                     &nbsp;HackerRank Verified Skills
                   </span>
                   <span class="span3" onClick={toggleHackerrankS}>
-                    View{" "}
+                    &nbsp;View{" "}
                     {isSkillsVisible2 ? (
                       <FontAwesomeIcon icon={faAngleUp} />
                     ) : (

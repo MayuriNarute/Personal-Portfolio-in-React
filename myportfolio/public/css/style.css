@@ -2965,10 +2965,6 @@ h6 {
     font-weight: 700;
     color: #000000; }
 
-/* End Brand Area css
-============================================================================================ */
-/* Start Portfolio Area css
-============================================================================================ */
 .portfolio_area {
   width: 100%;
   justify-content: center;
@@ -3006,7 +3002,8 @@ h6 {
     .portfolio_box {
       margin-bottom: 35px; } }
   .portfolio_box .short_info {
-    margin-top: 30px; }
+    margin-top: 30px;
+   }
     @media (max-width: 767px) {
       .portfolio_box .short_info {
         margin-top: 20px; } }
@@ -3309,8 +3306,8 @@ h6 {
   /* Footer Area css
   ============================================================================================ */
   .footer_area {
-    padding-top: 70px !important;
-    padding-bottom: 70px !important;
+    padding-top: 10px !important;
+    padding-bottom: 60px !important;
     background-image: none !important;
     background-color: #fcf8ff; }
 

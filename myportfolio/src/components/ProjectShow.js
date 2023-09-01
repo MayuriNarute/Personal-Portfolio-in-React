@@ -66,7 +66,7 @@ const ProjectShow = () => {
                 all
               </li>
               <li onClick={() => onlyJava("Java")}>Java Full Stack</li>
-              <li onClick={() => onlyPHP("PHP")}> PHP-MySQL</li>
+              <li onClick={() => onlyPHP("PHP")}> PHP</li>
               <li onClick={() => onlyPython("Python")}>Python</li>
               <li onClick={() => onlyReact("React")}>React JS</li>
             </ul>
@@ -83,6 +83,11 @@ const ProjectShow = () => {
                       link={value.link}
                       yt={value.yt}
                       git={value.git}
+                      techstack={value.techstack}
+                      techstack2={value.techstack2}
+                      techstack3={value.techstack3}
+                      techstack4={value.techstack4}
+
                     />
                   </>
                 );

@@ -186,7 +186,7 @@ const Certificates = () => {
                 &nbsp;Participation Certificates
               </span>
               <span class="span3" onClick={toggleParticipation}>
-              View &nbsp;
+              &nbsp;View &nbsp;
                 {isPartVisible ? <FontAwesomeIcon icon={faAngleUp} /> : <FontAwesomeIcon icon={faAngleDown} />}
               </span>
             </li>
