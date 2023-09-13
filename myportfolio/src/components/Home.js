@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <>
       <section class="home_banner_area">
-     <br/>
         <div class="banner_inner">
           <div class="container">
 
@@ -31,15 +30,15 @@ const Home = () => {
               <div class="col-lg-7">
                 <div class="banner_content" id="hometext" style={{background:'#fff'}}>
                   <br />
-                  <h3>Hello<span className="wave-emoji">👋</span>, I am</h3>
-                  <h1>Mayuri Narute</h1>
+                  <h3 style={{fontWeight:'500'}}>Hello<span className="wave-emoji">👋</span>, I am</h3>
+                  <h1 style={{fontWeight:'550'}}>Mayuri Narute</h1>
                   <h5>Full Stack Java Developer | Learning React | Competitive Programming | PCCOE'25 | GPP'22</h5>
                   <div class="d-flex align-items-center">
                     <Link class="primary_btn" style={{textDecoration:'none'}} to="/contact">
-                      <span>Hire Me</span>
+                      <span style={{fontWeight:'600'}}>Hire Me</span>
                     </Link>
                     <a class="primary_btn tr-bg" style={{textDecoration:'none'}}  href="img/banner/Mayuri's resume.pdf" download>
-                      <span>Get Resume</span>
+                      <span style={{fontWeight:'600'}}>Get Resume</span>
                     </a>
                     <br></br>
                     

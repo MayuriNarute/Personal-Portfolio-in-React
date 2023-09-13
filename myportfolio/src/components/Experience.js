@@ -59,7 +59,7 @@ const Experience = () => {
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <div class="main_title">
-                <h3>
+                <h3 style={{fontWeight:'600'}}>
                   My Expedition<span class="book">📚</span>
                 </h3>
                 <p>

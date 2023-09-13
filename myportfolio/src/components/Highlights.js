@@ -51,7 +51,7 @@ const Highlights = () => {
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <div class="main_title">
-                <h3>My Achievments<span className="trophy">🏆</span></h3>
+                <h3 style={{fontWeight:'600'}}>My Achievments<span className="trophy">🏆</span></h3>
                 <p>
                   Evidence of dedication and excellence. Explore my
                   achievements-a journey defined by <br />

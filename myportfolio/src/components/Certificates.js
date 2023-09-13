@@ -92,7 +92,7 @@ const Certificates = () => {
           <div class="row justify-content-center ">
             <div class="col-lg-8 text-center">
               <div class="main_title">
-                <h3>
+                <h3 style={{fontWeight:'600'}}>
                   My Certificates<span className="ribbon">🎗️</span>
                 </h3>
                 <p>

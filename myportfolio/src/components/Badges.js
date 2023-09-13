@@ -33,12 +33,12 @@ const Badges = () => {
   };
   return (
     <>
-      <section class="features_area section_gap_top">
+      <section class="features_area section_gap  justify-content-center">
         <div class="container ">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="main_title ">
-                <h3 className="text-center">
+                <h3 style={{fontWeight:'600'}} className="text-center">
                   My CP Milestones<span class="badges">🏅</span>
                 </h3>
                 <p>
@@ -46,8 +46,8 @@ const Badges = () => {
                   through my competitive programming <br />
                   achievements and see how I code my way to success.
                   <br />
-                  Find my Coding Profiles here:
-                </p><br/>
+                  
+                </p><p>Find my Coding Profiles here:</p><br/>
                 <div class="footer_logo">
                   <div class="footer_social text-center">
                     <a
@@ -84,8 +84,6 @@ const Badges = () => {
                 </div>
               </div>
             </div>
-
-            <div className="justify-content-center">
               <h4 class="mb-4">
                 <li className="list-item">
                   <span>
@@ -93,7 +91,7 @@ const Badges = () => {
                     &nbsp;HackerRank Badges
                   </span>
                   <span class="span2" onClick={toggleHackerrankB}>
-                    View{" "}
+                View{" "}
                     {isSkillsVisible ? (
                       <FontAwesomeIcon icon={faAngleUp} />
                     ) : (
@@ -103,7 +101,7 @@ const Badges = () => {
                 </li>
               </h4>
 
-              <Collapse in={isSkillsVisible} className="drop justify-content-center">
+              <Collapse in={isSkillsVisible}>
                 <section class="features_area">
                   <div
                     class="row feature_inner"
@@ -167,15 +165,15 @@ const Badges = () => {
                   </div>
                 </section>
               </Collapse>
-
-              <h4 class="mb-4">
-                <li class="list-item">
+                        
+              <h4 class="mb-4  ">
+                <li class="list-item" >
                   <span>
                     <Icon icon="fa-brands:hackerrank" width="25" />
                     &nbsp;HackerRank Verified Skills
                   </span>
                   <span class="span3" onClick={toggleHackerrankS}>
-                    &nbsp;View{" "}
+                  View{" "}
                     {isSkillsVisible2 ? (
                       <FontAwesomeIcon icon={faAngleUp} />
                     ) : (
@@ -247,7 +245,7 @@ const Badges = () => {
                     &nbsp;Leetcode Badges
                   </span>
                   <span class="span4" onClick={toggleLeetcode}>
-                    View{" "}
+                  &nbsp;View{" "}
                     {isSkillsVisible3 ? (
                       <FontAwesomeIcon icon={faAngleUp} />
                     ) : (
@@ -377,7 +375,7 @@ const Badges = () => {
               </Collapse>
             </div>
           </div>
-        </div>
+          
       </section>
     </>
   );

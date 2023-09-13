@@ -50,7 +50,7 @@ const ProjectShow = () => {
               <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                   <div class="main_title">
-                    <h3 class="text-center">
+                    <h3 style={{fontWeight:'600'}} class="text-center">
                       Checkout my work!<span class="bulb">💡</span>
                     </h3>
                     <p>
@@ -75,7 +75,7 @@ const ProjectShow = () => {
                   </ul>
                 </div>
                 <div class="filters-content">
-                  <div class="row portfolio-grid">
+                  <div class="row portfolio-grid justify-content-center">
                     {images.map((value) => {
                       return (
                         <>

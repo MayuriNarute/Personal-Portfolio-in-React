@@ -44,7 +44,7 @@ const Contact = () => {
           <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                   <div class="main_title">
-                    <h3>Contact Me<span className="handshake">🤝</span></h3>
+                    <h3 style={{fontWeight:'600'}}>Contact Me<span className="handshake">🤝</span></h3>
                     <p>
                     Let's Connect! Reach out for opportunities, discussions, or just to say hello.<br/> Looking forward to hearing from you.
                     </p>
@@ -60,7 +60,7 @@ const Contact = () => {
      
 
         <div class="col-md-6">
-          <form class="mb-5" ref={form}
+          <form class="mb-5" style={{fontWeight:'600'}} ref={form}
                 onSubmit={sendEmail} id="contactForm" name="contactForm">
             <div class="row">
               
@@ -97,7 +97,7 @@ const Contact = () => {
             <div class="row">
               <div class="col-md-12">
               <button type="submit" value="submit" class="primary_btn">
-                    <span>Drop a Message</span>
+                    <span style={{fontWeight:'600'}}>Drop a Message</span>
                   </button>
                 <span class="submitting"></span>
               </div>
