@@ -72,7 +72,7 @@ const Experience = () => {
           <div class="container" style={{ paddingTop: 0, marginTop: 0 }}>
             <div class="row feature_inner justify-content-center ">
               <div class="col-lg-5 col-md-6 ">
-                <div class="feature_item text-center">
+                <div class="feature_item text-center wow animate__animated animate__fadeInUp animate__delay-0.8s custom-fadeinup">
                   <a class="primary_btn " href="#">
                     <span>
                       <FontAwesomeIcon icon={faClock} />
@@ -229,7 +229,7 @@ const Experience = () => {
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
-                <div class="feature_item text-center">
+                <div class="feature_item text-center wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">
                   <a class="primary_btn" href="#">
                     <span>
                       <FontAwesomeIcon icon={faGraduationCap} />

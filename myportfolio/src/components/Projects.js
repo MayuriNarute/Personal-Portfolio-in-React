@@ -8,9 +8,9 @@ const Projects = ({ image, name, description,link,yt,git,techstack,techstack2,te
   return (
     <>
       <div class="col-lg-4 col-md-6">
-        <div class="portfolio_box">
-          <div class="single_portfolio">
-            <img class="img-fluid w-80" src={image} alt="" />
+        <div class="portfolio_box ">
+          <div class="single_portfolio wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">
+            <img class="img-fluid w-80 " src={image} alt="" />
             <div class="overlay"></div>
             
               <div class="icon">
@@ -20,7 +20,7 @@ const Projects = ({ image, name, description,link,yt,git,techstack,techstack2,te
 
               </div>
           </div>
-          <div class="short_info" >
+          <div class="short_info wow animate__animated animate__fadeInUp animate__delay-0.2s custom-fadeinup" >
             <h5 style={{color:'#854fee'}}>
               <a style={{textDecoration:'none'}}>{name}</a>
             </h5>

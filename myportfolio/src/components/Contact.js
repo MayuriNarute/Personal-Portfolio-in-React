@@ -54,7 +54,7 @@ const Contact = () => {
      
        
     
-    <div class="container">
+    <div class="container-fluid">
    
       <div class="row justify-content-center">
      

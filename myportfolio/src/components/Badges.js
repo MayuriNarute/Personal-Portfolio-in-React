@@ -194,7 +194,7 @@ const Badges = () => {
                           style={{ width: "100px", height: "150px" }}
                           alt=""
                         />
-                        <h5>SQL (Basic)</h5>
+                        <h6>Python (Basic)</h6>
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -204,7 +204,7 @@ const Badges = () => {
                           style={{ width: "100px", height: "150px" }}
                           alt=""
                         />
-                        <h5>SQL (Intermediate)</h5>
+                        <h6>JavaScript (Intermediate)</h6>
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -214,7 +214,7 @@ const Badges = () => {
                           style={{ width: "100px", height: "150px" }}
                           alt=""
                         />
-                        <h5>SQL (Advanced)</h5>
+                        <h6>SQL (Advanced)</h6>
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -224,16 +224,16 @@ const Badges = () => {
                           style={{ width: "100px", height: "150px" }}
                           alt=""
                         />
-                        <h5></h5>
+                        <h6>Problem Solving (Basic)</h6>
                       </div>
                     </div>
 
-                    <h4 style={{ textAlign: "center" }}>
+                    <p style={{ textAlign: "center" }}>
                       Wanna view more skills ?{" "}
-                      <a style={{ textAlign: "center" }} href="">
-                        Follow me on HackerRank
+                      <a style={{ textAlign: "center",color:'black',textDecoration:'none' }} href="https://www.hackerrank.com/mayurinarute2003?hr_r=1">
+                        <b style={{color:'black'}}>Follow me on HackerRank</b>
                       </a>
-                    </h4>
+                    </p>
                   </div>
                 </section>
               </Collapse>
@@ -270,7 +270,7 @@ const Badges = () => {
                           style={{ width: "100px", height: "100px" }}
                           alt=""
                         />
-                        <h5>March 2523 Leetcoding Challenge</h5>
+                        <h5>March 2023 Leetcoding Challenge</h5>
                       </div>
                     </div>
                   </div>

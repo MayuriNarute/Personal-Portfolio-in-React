@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import Quote from './Quote';
 
 const Navbar=()=>{
 	const maxLength = 80;

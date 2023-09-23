@@ -74,12 +74,12 @@ const ProjectShow = () => {
                     <li onClick={() => onlyReact("React")}>React JS</li>
                   </ul>
                 </div>
-                <div class="filters-content">
-                  <div class="row portfolio-grid justify-content-center">
+                <div class="filters-content ">
+                  <div class="row portfolio-grid justify-content-center ">
                     {images.map((value) => {
                       return (
                         <>
-                          <Projects
+                          <Projects  
                             image={value.image}
                             name={value.name}
                             description={value.description}
