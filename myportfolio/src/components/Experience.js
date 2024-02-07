@@ -41,11 +41,7 @@ const Experience = () => {
       Technologies, Pune
     </Tooltip>
   );
-  const tooltip4 = (
-    <Tooltip id="tooltip" style={{ textAlign: "left" }}>
-      Completed 1 month DSA Learning based Virtual Internship at TwoWaits
-    </Tooltip>
-  );
+  
   const tooltip5 = (
     <Tooltip id="tooltip" style={{ textAlign: "left" }}>
       Completed my SSC from Tukdoji Vidyalaya,Daund with the aggregate of
@@ -55,7 +51,7 @@ const Experience = () => {
   return (
     <>
       <section class="banner_area">
-        <section class="features_area section_gap_top">
+        <section class="features_area section_gap">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <div class="main_title">
@@ -74,7 +70,7 @@ const Experience = () => {
               <div class="col-lg-5 col-md-6 ">
                 <div class="feature_item text-center wow animate__animated animate__fadeInUp animate__delay-0.8s custom-fadeinup">
                   <a class="primary_btn " href="#">
-                    <span>
+                    <span style={{fontWeight:'600',padding:'0 42px',lineHeight:'45px'}}>
                       <FontAwesomeIcon icon={faClock} />
                       &nbsp;&nbsp;Experience
                     </span>
@@ -193,37 +189,7 @@ const Experience = () => {
                           <br></br>
                         </div>
                       </div>
-                      <div class="timeline-wrapper">
-                        <div class="timeline-yr">
-                          <span>2021-Jul</span>
-                        </div>
-                        <div
-                          class="timeline-info"
-                          style={{ paddingLeft: "10px", paddingTop: "25px" }}>
-                          <h5>
-                            <span>DSA Scholar Intern</span>
-                            <small
-                              style={{
-                                fontSize: 12,
-                                fontWeight: "bold",
-                                content: "",
-                                display: "block",
-                                marginLeft: "35px",
-                                marginTop: "0.5rem",
-                              }}>
-                              <OverlayTrigger
-                                placement="bottom"
-                                overlay={tooltip4}>
-                                <a href="#">@TwoWaits</a>
-                              </OverlayTrigger>
-                            </small>
-                          </h5>
-                          <p>
-                            <br></br>
-                          </p>
-                          <br></br>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -231,7 +197,7 @@ const Experience = () => {
               <div class="col-lg-6 col-md-6">
                 <div class="feature_item text-center wow animate__animated animate__fadeInUp animate__delay-0.5s custom-fadeinup">
                   <a class="primary_btn" href="#">
-                    <span>
+                    <span style={{fontWeight:'600',padding:'0 42px',lineHeight:'45px'}}>
                       <FontAwesomeIcon icon={faGraduationCap} />
                       &nbsp;&nbsp;Education
                     </span>

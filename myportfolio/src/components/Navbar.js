@@ -29,7 +29,6 @@ const Navbar=()=>{
 								aria-expanded="false">Achievments</Link>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><Link class="nav-link" to="/Highlights">Highlights</Link></li>
-									<li class="nav-item"><Link class="nav-link" to="/CP_milestones">CP Milestones</Link></li>
 									<li class="nav-item"><Link class="nav-link" to="/certificates">Certificates</Link></li>
 								</ul>
 							</li>

@@ -17,10 +17,10 @@ const Home = () => {
             <div class="col-lg-5" id="profile">
               <div
                   class="feature_item text-center"
-                  style={{ border: "2px solid #854fee", borderRadius: "50%"}}>
+                  style={{ border: "2px solid #854fee", borderRadius: "50%",paddingBottom:"0px"}}>
                   <img
                     class="photo"
-                    src="img/banner/Photo-min.png"
+                    src="img/banner/profile pic.jpeg"
                     alt="My Photo"
                   />
                 </div>
@@ -31,12 +31,12 @@ const Home = () => {
                   <br />
                   <h3 style={{fontWeight:'500'}}>Hello<span className="wave-emoji">👋</span>, I am</h3>
                   <h1 style={{fontWeight:'550'}}>Mayuri Narute</h1>
-                  <h5>Full Stack Java Developer | Learning React | Competitive Programming | PCCOE'25 | GPP'22</h5>
+                  <h5>Full Stack Java Developer | MERN Stack | SIH'23 Finalist | PCCOE'25 | GPP'22</h5>
                   <div class="d-flex align-items-center">
                     <Link class="primary_btn" style={{textDecoration:'none'}} to="/contact">
                       <span style={{fontWeight:'600'}}>Hire Me</span>
                     </Link>
-                    <a class="primary_btn tr-bg" style={{textDecoration:'none'}}  href="img/banner/Mayuri's resume.pdf" download>
+                    <a class="primary_btn tr-bg" style={{textDecoration:'none'}}  href="img/banner/Mayuri_Resume.pdf" download>
                       <span style={{fontWeight:'600'}}>Get Resume</span>
                     </a>
                     <br></br>

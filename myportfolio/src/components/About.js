@@ -50,7 +50,7 @@ const About = () => {
                 style={{ border: "2px solid #854fee", borderRadius: "50%" }}>
                 <img
                   class="photo"
-                  src="img/banner/Photo-min.png"
+                  src="img/banner/profile pic.jpeg"
                   alt="My Photo"
                   srcSet=""
                 />
@@ -122,15 +122,15 @@ const About = () => {
                 <a
                   class="primary_btn"
                   style={{ textDecoration: "none" }}
-                  href="img/banner/Mayuri's resume.pdf"
+                  href="img/banner/Mayuri_Resume.pdf"
                   download>
-                  <span style={{fontWeight:'600'}}>Download CV/Resume</span>
+                  <span style={{fontWeight:'600',padding:'0 42px',lineHeight:'45px'}}>Download CV/Resume</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <section class="features_area" style={{ paddingTop: "60px" }}>
+        <section class="features_area" >
           <div class="container">
             <div class="row justify-content-center ">
               <div class="col-lg-8 text-center wow animate__animated animate__fadeInUp animate__delay-0s custom2">
@@ -141,8 +141,7 @@ const About = () => {
                   <p>
                     From frontend elegance to backend robustness, my coding
                     skills bring ideas to life. <br />
-                    Proficient in creating responsive web apps & optimizing user
-                    experiences through efficient code.
+                    
                   </p>
                 </div>
               </div>
@@ -278,7 +277,7 @@ const About = () => {
                       />
                       &nbsp;
                       <img
-                        src="https://img.shields.io/badge/Servlet-%23FFA500.svg?style=for-the-badge&logo=Servlet&logoColor=white"
+                        src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
                         alt="servlet"
                       />
                       &nbsp;
@@ -340,10 +339,7 @@ const About = () => {
                         alt="canva"
                       />
                       &nbsp;
-                      <img
-                        src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"
-                        alt="arduino"
-                      />
+                      
                     </div>
                   )}
                 </div>

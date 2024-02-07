@@ -46,7 +46,7 @@ const Contact = () => {
                   <div class="main_title">
                     <h3 style={{fontWeight:'600'}}>Contact Me<span className="handshake">🤝</span></h3>
                     <p>
-                    Let's Connect! Reach out for opportunities, discussions, or just to say hello.<br/> Looking forward to hearing from you.
+                    Let's Connect! Reach out for opportunities, discussions, or just to say hello.
                     </p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const Contact = () => {
             <div class="row">
               <div class="col-md-12">
               <button type="submit" value="submit" class="primary_btn">
-                    <span style={{fontWeight:'600'}}>Drop a Message</span>
+                    <span style={{fontWeight:'600',padding:'0 42px',lineHeight:'45px'}}>Drop a Message</span>
                   </button>
                 <span class="submitting"></span>
               </div>

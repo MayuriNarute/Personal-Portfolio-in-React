@@ -252,7 +252,8 @@ body {
   }
   .photo{
     padding-top: 0px;
-    width: 90%;
+    margin-top: 0px;
+    width: 100%;
   }
   #hometext{
     padding-left: 2px;
@@ -466,11 +467,9 @@ button:focus {
 .primary_btn {
   display: inline-block;
   color: #fff;
-  letter-spacing: 0px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 46px;
   outline: none !important;
   text-align: center;
   cursor: pointer;
@@ -483,7 +482,7 @@ button:focus {
   border: double 2px transparent;
   box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3); }
   .primary_btn span {
-    padding: 0 42px; }
+    padding: 0 30px; }
   .primary_btn.tr-bg {
     background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
     border: 2px solid transparent;
@@ -763,7 +762,21 @@ button:focus {
         margin-right: 2px;
         margin-left: 2px;
       }
-      
+      /* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .primary_btn {
+    padding: 8px 16px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 576px) {
+  .primary_btn {
+    padding: 6px 12px;
+    font-size: 12px; /* Further adjust font size for very small screens */
+  }
+}
 
 
 .banner_area {
@@ -3403,7 +3416,7 @@ h6 {
     margin-top: 0px; }
     .home_banner_area .banner_inner .banner_content .primary_btn.active {
       font-size: 9px;
-      height: 1rem;
+      height: 0.4rem;
      transform: translate(0,0,3rem); }
 
   /* Blog Page Area css
@@ -3610,9 +3623,13 @@ h6 {
       text-transform: uppercase; }
   .footer_area .footer_social {
     text-align: center;
-    margin: 25px 0px 30px; }
+    margin: 25px 0px 20px 0px;
+     }
     .footer_area .footer_social a {
-      padding: 5px 5px 5px 5px; }
+      padding: 5px;
+      display: inline-block;
+      margin: 3px;
+     }
       .footer_area .footer_social a i{
         color: #000000;
         font-size: 22px;
@@ -3622,7 +3639,8 @@ h6 {
         transition: all 0.4s ease 0s; }
         @media (max-width: 576px) {
           .footer_area .footer_social a i {
-            font-size: 25px; } }
+            font-size: 20px;
+           } }
         .footer_area .footer_social a:hover {
           background-color: #854fee; 
           color: white;

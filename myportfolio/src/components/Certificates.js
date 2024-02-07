@@ -96,13 +96,13 @@ const Certificates = () => {
                   My Certificates<span className="ribbon">🎗️</span>
                 </h3>
                 <p>
-                Explore my certifications and qualifications, showcasing my commitment to <br/>continuous
+                Explore my certifications and qualifications, commitment to <br/>continuous
                  learning and expertise in various domains.
                 </p>
               </div>
             </div>
           </div>
-          <h4 class="mb-4 justify-content-left">
+          <h4 class="mb-4 justify-content-center">
             <li className="list-item">
               <span>
               <FontAwesomeIcon icon={faRibbon} size="lg"></FontAwesomeIcon>
